@@ -358,6 +358,9 @@ importers:
       '@openpgp/web-stream-tools':
         specifier: 0.0.14
         version: 0.0.14(typescript@5.1.6)
+      '@pnpm/lockfile-types':
+        specifier: 5.1.1
+        version: 5.1.1
       '@renovate/eslint-plugin':
         specifier: file:tools/eslint
         version: file:tools/eslint
@@ -2817,6 +2820,13 @@ packages:
       graceful-fs: 4.2.11
     dev: false
 
+  /@pnpm/lockfile-types@5.1.1:
+    resolution: {integrity: sha512-QswQGFENlosERR2rCxp/0MhyOwBsRyfDvngTOmn8QG2IPd3KsCJFUNFnLddAp13L+9bxcTgijYIuyN2MlShoFw==}
+    engines: {node: '>=16.14'}
+    dependencies:
+      '@pnpm/types': 9.2.0
+    dev: true
+
   /@pnpm/network.ca-file@1.0.2:
     resolution: {integrity: sha512-YcPQ8a0jwYU9bTdJDpXjMi7Brhkr1mXsXrUJvjqM2mQDgkRiz8jFaQGOdaLxgjtUfQgZhKy/O3cG/YwmgKaxLA==}
     engines: {node: '>=12.22.0'}
@@ -2863,6 +2873,11 @@ packages:
     resolution: {integrity: sha512-3MYHYm8epnciApn6w5Fzx6sepawmsNU7l6lvIq+ER22/DPSrr83YMhU/EQWnf4lORn2YyiXFj0FJSyJzEtIGmw==}
     engines: {node: '>=14.6'}
     dev: false
+
+  /@pnpm/types@9.2.0:
+    resolution: {integrity: sha512-LtkHgtJ5Bjny4poUWyMhOKHc822/zm8NhPx+7VbopfDYnTrKgJwTyTbZjZEyN5KpDw3R1Fr8VYdmv5gn4eyWbw==}
+    engines: {node: '>=16.14'}
+    dev: true
 
   /@pnpm/util.lex-comparator@1.0.0:
     resolution: {integrity: sha512-3aBQPHntVgk5AweBWZn+1I/fqZ9krK/w01197aYVkAJQGftb+BVWgEepxY5GChjSW12j52XX+CmfynYZ/p0DFQ==}

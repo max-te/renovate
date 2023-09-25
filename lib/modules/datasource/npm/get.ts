@@ -181,6 +181,9 @@ export async function getDependency(
       if (res.versions?.[version].deprecated) {
         release.isDeprecated = true;
       }
+      if (res.versions?.[version].dist?.integrity) {
+        release.newDigest = res.versions?.[version].dist.integrity;
+      }
       const nodeConstraint = res.versions?.[version].engines?.node;
       if (is.nonEmptyString(nodeConstraint)) {
         release.constraints = { node: [nodeConstraint] };

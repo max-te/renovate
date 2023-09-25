@@ -18,6 +18,11 @@ export interface NpmResponseVersion {
   dependencies?: Record<string, string>;
   devDependencies?: Record<string, string>;
   engines?: Record<string, string>;
+  dist: {
+    integrity: string;
+    shasum: string;
+    tarball: string;
+  };
 }
 
 export interface NpmResponse {

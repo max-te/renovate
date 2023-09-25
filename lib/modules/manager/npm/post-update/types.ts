@@ -40,7 +40,13 @@ export interface PnpmLockFile {
   dependencies: PnpmDependencySchema;
   devDependencies: PnpmDependencySchema;
   optionalDependencies: PnpmDependencySchema;
+  packages: Record<string, PnpmLockPackageSchema>;
 }
+
+export type PnpmLockPackageSchema = {
+  resolution: { integrity?: string; tarball?: string };
+  dependencies?: Record<string, string>;
+};
 
 export interface YarnRcYmlFile {
   yarnPath?: string | null;

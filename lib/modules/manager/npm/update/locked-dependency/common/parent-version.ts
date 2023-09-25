@@ -8,7 +8,7 @@ import { api as semver } from '../../../../../versioning/npm';
 
 const pkgCache = new Map<string, Promise<ReleaseResult | null>>();
 
-function getPkgReleasesCached(
+export function getPkgReleasesCached(
   packageName: string
 ): Promise<ReleaseResult | null> {
   let cachedResult = pkgCache.get(packageName);
